@@ -1,0 +1,5 @@
+c:\capgemini\BridgeLabz-Training\core-csharp-practice\gcr-codebase\csharp-arrays\level01\.cphcsrun\obj\Release\net10.0\.cphcsrun.GeneratedMSBuildEditorConfig.editorconfig
+c:\capgemini\BridgeLabz-Training\core-csharp-practice\gcr-codebase\csharp-arrays\level01\.cphcsrun\obj\Release\net10.0\.cphcsrun.AssemblyInfoInputs.cache
+c:\capgemini\BridgeLabz-Training\core-csharp-practice\gcr-codebase\csharp-arrays\level01\.cphcsrun\obj\Release\net10.0\.cphcsrun.AssemblyInfo.cs
+c:\capgemini\BridgeLabz-Training\core-csharp-practice\gcr-codebase\csharp-arrays\level01\.cphcsrun\obj\Release\net10.0\.cphcsrun.csproj.CoreCompileInputs.cache
+c:\capgemini\BridgeLabz-Training\core-csharp-practice\gcr-codebase\csharp-arrays\level01\.cphcsrun\obj\Release\net10.0\.cphcsrun.sourcelink.json
