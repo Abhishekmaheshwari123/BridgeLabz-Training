@@ -1,45 +1,130 @@
-From: Abhishek Maheshwari
-
-📅 Learning Log — 18 December
-
-Successfully installed .NET 8 (latest version)
-
-Learned the fundamentals of C# programming
-
-Studied IL (Intermediate Language) and MSI concepts
-
-Explored the history and evolution of C#
-
-Gained clarity on the difference between a compiler and an interpreter
-
-Implemented 10 basic C# programs to strengthen hands-on understanding
-
-Learned basic Git and GitHub commands for version control
-
----
-
 📅 Learning Log — 30 December 2025
-
 Topic: Object-Oriented Programming (OOP) — Object, Class
+🧱 Class
 
-- **Class:** A blueprint or template that defines the structure (fields/properties) and behavior (methods/functions) common to all objects of that type.
-- **Object:** A concrete instance of a class that holds specific values for the properties defined by the class and can perform the class's methods.
+A blueprint or template that defines the structure (fields/properties) and behavior (methods/functions) common to all objects of that type.
 
-Key OOP Principles (short):
-- **Encapsulation:** Bundling data and methods that operate on that data inside a class; restricting direct access to some of an object's components.
-- **Abstraction:** Hiding complex implementation details and exposing only the necessary interface.
-- **Inheritance:** Creating a new class (child) from an existing class (parent) to reuse and extend behavior.
-- **Polymorphism:** Allowing objects of different classes to be treated as objects of a common base class, often via method overriding or interfaces.
+🧩 Object
 
-Comparison Between Procedural Programming and OOP
-- **Focus:** Procedural: procedures/functions and step-by-step logic. OOP: objects that combine data and behavior.
-- **Data Handling:** Procedural often uses global/shared data passed between functions; OOP encapsulates data within objects.
-- **Modularity:** Procedural: split program into procedures. OOP: split into classes/objects with clear responsibilities.
-- **Reusability:** OOP typically enables higher reuse via inheritance and composition; procedural reuse relies on function libraries.
-- **Maintainability:** OOP often improves maintainability for large systems by organizing code around entities; procedural can be simpler for small scripts.
-- **Examples:** Procedural — C programs, simple scripts. OOP — Java, C#, Python with classes.
+A concrete instance of a class that holds specific values and can use the class methods.
 
-Quick Next Steps
-- Practice: create simple `Class` and `Object` examples in C# (e.g., `Person` class, `Car` class) and implement small inheritance hierarchies.
-- Read: revisit encapsulation and practice designing class interfaces.
+⭐ Key OOP Principles (short)
 
+Encapsulation
+Bundling data + methods inside a class and restricting direct access.
+
+Abstraction
+Hiding complex implementation, exposing only what is necessary.
+
+Inheritance
+Creating a new class from an existing class to reuse/extend functionality.
+
+Polymorphism
+Treating different object types as one base type (method overriding/interfaces).
+
+🔁 Comparison: Procedural vs OOP
+Concept	Procedural	OOP
+Focus	Functions, steps	Objects + behavior
+Data	Often global/shared	Encapsulated inside objects
+Modularity	Functions	Classes with responsibilities
+Reusability	Function libraries	Inheritance + composition
+Maintainability	Simple for small programs	Better for large systems
+Examples	C, scripts	C#, Java, Python (with classes)
+
+
+🗓️ Date: 31-12-2025
+🎯 Tasks of the Day
+
+Completed 3 scenario-based OOP projects:
+
+Project 1: Mathematical Operations — Algorithm implementation
+Project 2: Bank System — Role-based authentication & account management
+Project 3: Invoice Generator — Text parsing & invoice total calculation
+
+📋 Project 1: Mathematical Operations
+
+File: oops-csharp-practice/scenario-based/MathematicalOperations.cs
+
+🔢 Features
+
+Recursive menu system
+
+Algorithms:
+
+Factorial()
+
+PrimeNumber()
+
+GCD()
+
+Fibonacci()
+
+📚 Key Learnings
+
+Static utility classes
+
+Menu-driven patterns
+
+Iterative vs recursive
+
+Using long for large values
+
+Clean separation of concerns
+
+🏦 Project 2: Bank System
+
+File: oops-csharp-practice/scenario-based/BankingSystem.cs
+
+🔐 Features
+
+Client & manager authentication
+
+Retry mechanism
+
+Role-based menus
+
+Transaction rules & limits
+
+📚 Key Learnings
+
+Role-based access control
+
+2D arrays for account data
+
+Encapsulation + readonly fields
+
+Abstraction of authentication logic
+
+🧾 Project 3: Invoice Generator
+
+File: oops-csharp-practice/scenario-based/FreeLancer.cs
+
+🧮 Features
+
+Menu-driven invoice creation
+
+Parse Task - amount INR
+
+Sum total invoice amount
+
+Show task summary + total
+
+📚 Key Learnings
+
+String parsing, trimming, splitting
+
+Separate parsing vs calculation logic
+
+Recursive console menu handling
+
+🚀 Future Enhancements
+
+Deposit / Withdraw / Balance features
+
+Input validation + custom exceptions
+
+Persistent storage
+
+Password hashing
+
+Transaction history & statements
