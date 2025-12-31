@@ -43,7 +43,7 @@ Project 3: Invoice Generator — Text parsing & invoice total calculation
 
 📋 Project 1: Mathematical Operations
 
-File: oops-csharp-practice/scenario-based/MathematicalOperations.cs
+File: `oops-csharp-practice/scenario-based/MathematicalOperations.cs`
 
 🔢 Features
 
@@ -73,7 +73,7 @@ Clean separation of concerns
 
 🏦 Project 2: Bank System
 
-File: oops-csharp-practice/scenario-based/BankingSystem.cs
+File: `oops-csharp-practice/scenario-based/BankingSystem.cs`
 
 🔐 Features
 
@@ -97,7 +97,7 @@ Abstraction of authentication logic
 
 🧾 Project 3: Invoice Generator
 
-File: oops-csharp-practice/scenario-based/FreeLancer.cs
+File: `oops-csharp-practice/scenario-based/FreeLancer.cs`
 
 🧮 Features
 
