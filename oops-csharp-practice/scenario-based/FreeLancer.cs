@@ -1,6 +1,6 @@
 using System;
 
-class Program
+class FreeLancer
 {
     static string[] ParseInvoice(string input)
     {
