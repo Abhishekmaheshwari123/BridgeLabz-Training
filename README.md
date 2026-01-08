@@ -768,4 +768,8 @@ By the end of this training, I aim to be proficient in:
 
 ---
 
+<<<<<<< HEAD
 📌 *This README will be continuously updated to reflect ongoing learning and progress during the BridgeLabz Training Program.*
+=======
+📌 *This README will be continuously updated to reflect ongoing learning and progress during the BridgeLabz Training Program.*
+>>>>>>> 6efdd9ef80615dd2e8539dc8bfaa9cac32e6cb7a
