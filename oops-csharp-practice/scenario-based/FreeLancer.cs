@@ -11,11 +11,9 @@ class FreeLancer
         }
         return parts;
     }
-
     static int GetTotalAmount(string[] tasks)
     {
         int total = 0;
-
         foreach (string task in tasks)
         {
             string[] pieces = task.Split('-');
@@ -26,7 +24,6 @@ class FreeLancer
         }
         return total;
     }
-
     static void Main()
     {
         Console.WriteLine("Enter invoice string:");

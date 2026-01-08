@@ -8,10 +8,34 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
 {
     internal class Employee
     {
-        private int EmployeeId {  get; set; }
-        private string EmployeeName { get; set; }
-        private int EmployeeAge { get; set; }
-        private double EmployeeSalary { get; set; }
+        private int employeeId;
+        private string employeeName;
+        private int employeeAge;
+        private double employeeSalary;
+
+        public int EmployeeId
+        {
+            get { return employeeId; }
+            set { employeeId = value; }
+        }
+
+        public string EmployeeName
+        {
+            get { return employeeName; }
+            set { employeeName = value; }
+        }
+
+        public int EmployeeAge
+        {
+            get { return employeeAge; }
+            set { employeeAge = value; }
+        }
+
+        public double EmployeeSalary
+        {
+            get { return employeeSalary; }
+            set { employeeSalary = value; }
+        }
 
         // Constants for wage calculation
         public const int WAGE_PER_HOUR = 20;
@@ -29,10 +53,10 @@ namespace BridgeLabzTraining.senariobased.employee_wage_computation_problem
 
         public override string? ToString()
         {
-            return "Employee Id " + EmployeeId +
-                "\nEmployee Name " + EmployeeName +
-                "\nEmployee Age " + EmployeeAge +
-                "\n Employee Salary " + EmployeeSalary;
+            return "Employee Id " + employeeId +
+                "\nEmployee Name " + employeeName +
+                "\nEmployee Age " + employeeAge +
+                "\nEmployee Salary " + employeeSalary;
         }
     }
 }

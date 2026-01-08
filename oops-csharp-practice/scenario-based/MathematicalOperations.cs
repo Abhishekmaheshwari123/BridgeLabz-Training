@@ -8,10 +8,6 @@ class MathematicalOperations
         Console.WriteLine("5 is a prime : "+op.IsPrime(5));
         Console.WriteLine("Gcd of 4 and 44 : "+op.Gcd(4,44));
         Console.WriteLine("8th Fibonacci Number is : "+op.NthFibonacci(8));
-        // Console.WriteLine(op.);
-        // Console.WriteLine(op.);
-        // Console.WriteLine(op.);
-        // Console.WriteLine(op.);
     }
 }
 

@@ -4,7 +4,6 @@ interface IFlyable
 {
     void Fly();
 }
-
 interface ISwimmable
 {
     void Swim();
