@@ -98,7 +98,6 @@ Completed **3 scenario-based OOP projects** demonstrating menu-driven applicatio
 ---
 
 ## 📋 Project 1: Mathematical Operations
-**File:** `oops-csharp-practice/scenario-based/MathematicalOperations.cs`
 
 ### 🔢 Features
 - **Interactive Menu:** Recursive menu system for continuous operation selection
@@ -118,7 +117,6 @@ Completed **3 scenario-based OOP projects** demonstrating menu-driven applicatio
 ---
 
 ## 🏦 Project 2: Bank System
-**File:** `oops-csharp-practice/scenario-based/BankSystem.cs`
 
 ### 🔐 Features
 - **Authentication System:**
@@ -153,7 +151,7 @@ Completed **3 scenario-based OOP projects** demonstrating menu-driven applicatio
 ---
 
 ## 🧾 Project 3: Invoice Generator
-**File:** `oops-charp-practice/scenario-based/InvoiceGenerator.cs`
+
 
 ### 🧮 Features
 - **Menu-Driven Flow:** Recursive menu to generate invoices or exit.
@@ -185,7 +183,6 @@ Completed **Cafeteria Ordering System** - A menu-driven application for food ord
 ---
 
 ## 🍔 Project 4: Cafeteria System
-**File:** `oops-csharp-practice/scenario-based/CafeteriaSystem.cs`
 
 ### 🍽️ Features
 - **Menu Display:** Shows 10 food items with indexed pricing
@@ -294,7 +291,6 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 ---
 
 ## 📝 Practice 1: Area of Circle
-**File:** `oops-charp-practice/gcr-code-base/csharp-class-object/AreaOfCircle.cs`
 
 ### 🔢 Features
 - **Class Design:**
@@ -319,7 +315,6 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 ---
 
 ## 👤 Practice 2: Employee Class
-**File:** `oops-charp-practice/gcr-code-base/csharp-class-object/EmployeeClass.cs`
 
 ### 💼 Features
 - **Class Design:**
@@ -342,7 +337,6 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 ---
 
 ## 📚 Practice 3: Handle Book Details
-**File:** `oops-charp-practice/gcr-code-base/csharp-class-object/HandleBookDetails.cs`
 ### 📖 Features
 - Three private fields: `title`, `author`, `price`
 - Parameterized constructor
@@ -364,39 +358,32 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 ## 🏗️ Constructor & Access Practice
 
 ### 📕 Book (Constructor with fields)
-- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/BookClass.cs](oops-charp-practice/gcr-code-base/csharp-constructors/BookClass.cs)
 - Parameterized constructor sets title, author, price
 - `Display()` prints a one-line summary of the book
 
 ### 🚗 Car Rental (Branching logic + constructor)
-- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/CarRental.cs](oops-charp-practice/gcr-code-base/csharp-constructors/CarRental.cs)
 - Constructor initializes customer name, model, rental days and triggers billing
 - Rate selection uses model-based conditional logic; `Display()` prints bill
 
 ### ⚪ Circle (Constructor + private helpers)
-- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/CircleClass.cs](oops-charp-practice/gcr-code-base/csharp-constructors/CircleClass.cs)
 - Constructor stores radius; private methods compute area and circumference
 - `Display()` shows both values using calculated results
 
 ### 🏨 Hotel Booking (Overloaded constructors + copy)
-- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/HotelBooking.cs](oops-charp-practice/gcr-code-base/csharp-constructors/HotelBooking.cs)
 - Demonstrates default, parameterized, and copy constructors
 - `Display()` outputs guest name, room type, and nights for each instance
 
 ### 📚 Library (Availability check with state toggle)
-- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/LibiraryClass.cs](oops-charp-practice/gcr-code-base/csharp-constructors/LibiraryClass.cs)
 - Constructor sets book metadata and availability flag
 - `Availability()` flips state on borrow; `Display()` summarizes book details
 
 ### 👤 Person (Copy constructor)
-- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/Person.cs](oops-charp-practice/gcr-code-base/csharp-constructors/Person.cs)
 - Parameterized constructor captures identity fields; copy constructor clones
 - `Display()` prints name, age, and city for original and copied instances
 
 ---
 
 ## 🚌 Project 5: Bus Route Distance Tracker
-**File:** oops-charp-practice/scenario-based/BusRouteDistanceTracker.cs
 
 ### 🛣️ Features
 - Fixed per-stop distance accumulator with running total display
@@ -411,7 +398,6 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 ---
 
 ## 🎁 Project 6: Festival Lucky Draw
-**File:** oops-charp-practice/scenario-based/FestivalLuckyDraw.cs
 
 ### 🎟️ Features
 - Validates positive integer input for lucky number entries
@@ -463,13 +449,13 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 - Readonly identifiers for immutable IDs (account numbers, roll numbers, ISBNs, product IDs, registrations).
 
 ### 🧩 Mini Systems & Files
-- Bank accounts with shared bank name, per-account balance display, and total account count — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/BankSystem.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/BankSystem.cs)
-- Employee roster with company-wide static name and total employee tracker — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/EmployeeManagement.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/EmployeeManagement.cs)
-- Hospital intake showing patient details and aggregate admissions — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/HospitalManagement.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/HospitalManagement.cs)
-- Library catalog with static library name and per-book display — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/LibrarySystem.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/LibrarySystem.cs)
-- Shopping cart applying a shared discount to products before summarizing totals — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/ShoppingCart.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/ShoppingCart.cs)
-- University roster keeping static university name and student count — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/UniversityManagement.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/UniversityManagement.cs)
-- Vehicle registration with a static fee applied to each record — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/VehicleRegistrationSystem.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/VehicleRegistrationSystem.cs)
+- Bank accounts with shared bank name, per-account balance display, and total account count — 
+- Employee roster with company-wide static name and total employee tracker — 
+- Hospital intake showing patient details and aggregate admissions — 
+- Library catalog with static library name and per-book display — 
+- Shopping cart applying a shared discount to products before summarizing totals —
+- University roster keeping static university name and student count — 
+- Vehicle registration with a static fee applied to each record — 
 
 ---
 
@@ -483,13 +469,6 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 - Method overriding for status reporting; method hiding when reusing display labels.
 - Using protected members for derived-class access while keeping fields scoped.
 
-### 🧩 Mini Systems & Files
-- Multilevel course catalog: Course → OnlineCourse → PaidOnlineCourse with fee and discount display — [oops-charp-practice/gcr-code-base/csharp-inheritance/multilevel-inheritance/CourseManagement.cs](oops-charp-practice/gcr-code-base/csharp-inheritance/multilevel-inheritance/CourseManagement.cs)
-- Multilevel retail orders: Order → ShippedOrder → DeliveredOrder with status via `GetOrderStatus()` and tracking/delivery info — [oops-charp-practice/gcr-code-base/csharp-inheritance/multilevel-inheritance/OnlineRetailSystem.cs](oops-charp-practice/gcr-code-base/csharp-inheritance/multilevel-inheritance/OnlineRetailSystem.cs)
-- Single-inheritance library: Book → Author combining publication metadata with author bio — [oops-charp-practice/gcr-code-base/csharp-inheritance/single-inheritance/LibraryManagement.cs](oops-charp-practice/gcr-code-base/csharp-inheritance/single-inheritance/LibraryManagement.cs)
-- Single-inheritance smart home: Device → Thermostat with status plus temperature setting — [oops-charp-practice/gcr-code-base/csharp-inheritance/single-inheritance/SmartHomeSystem.cs](oops-charp-practice/gcr-code-base/csharp-inheritance/single-inheritance/SmartHomeSystem.cs)
-
----
 
 ### 🗓️ **Date: 05-01-2026**
 ### 🎯 Task of the Day
@@ -500,32 +479,30 @@ Implement **Hospital Patient Management System** with billing, doctor, and patie
 ---
 
 ## 🏥 Project 7: Hospital Patient Management System
-**Folder:** [oops-charp-practice/scenario-based/hospital-patient-management-system/](oops-charp-practice/scenario-based/hospital-patient-management-system/)
 
 ### 🏗️ Core Classes & Architecture
-- **Patients** - Base class for all patient types with ID and name — [Patients.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/Patients.cs)
+- **Patients** - Base class for all patient types with ID and name —
   - `InPatient` - Derived class for admitted patients with length of stay tracking
   - `OutPatient` - Derived class for visiting patients with visit date tracking
   - `IPatient` - Interface contract for patient operations
 
-- **Doctors** - Healthcare provider class managing assigned patients — [Doctors.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/Doctors.cs)
-  - Maintains array of assigned patients
+- **Doctors** - Healthcare provider class managing assigned patients — 
   - Consultation fee management
   - `IDoctor` - Interface contract for doctor operations
 
-- **Bills** - Billing computation with hospital charges — [Bills.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/Bills.cs)
+- **Bills** - Billing computation with hospital charges — 
   - Room charges calculation (₹1500 per day)
   - Doctor fee aggregation
   - `IPayable` - Interface contract for billing operations
 
-- **Menu** - User interface orchestration — [Menu.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/Menu.cs)
+- **Menu** - User interface orchestration —
   - Menu display and option presentation
   - 5 main operations: View Patients, View Doctors, Doctor's Patients, Generate Bill, Exit
 
-- **Utility** - Helper functions — [Utility.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/Utility.cs)
+- **Utility** - Helper functions — 
   - Formatting utilities for consistent output
 
-- **HospitalManagement** - Main entry point with workflow — [HospitalManagement.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/HospitalManagement.cs)
+- **HospitalManagement** - Main entry point with workflow — 
   - Sample data initialization
   - Menu-driven control loop
   - Operation delegation based on user choice
@@ -623,7 +600,6 @@ Implement **Call Log Management System** with service interfaces and utility pat
 ---
 
 ## 📞 Project 8: Call Log Management System
-**File:** `oops-charp-practice/scenario-based/TetecomSystem.cs`
 
 ### 📱 Features
 - **Core Classes:**
@@ -743,13 +719,13 @@ Implement **Employee Wage Computation System** with interface-driven utilities a
 ---
 
 ## 💼 Project 10: Employee Wage Computation System
-**File:** [oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeMain.cs](oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeMain.cs)
+
 
 ### 🧱 Core Classes
-- Orchestrator entrypoint with looped menu — [oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeMenu.cs](oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeMenu.cs)
-- Interface contract for wage operations — [oops-charp-practice/scenario-based/employee-wage-computation-problem/IEmployee.cs](oops-charp-practice/scenario-based/employee-wage-computation-problem/IEmployee.cs)
-- Utility implementation with business logic and randomness — [oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeUtilityImpl.cs](oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeUtilityImpl.cs)
-- Employee model encapsulating wage constants and state — [oops-charp-practice/scenario-based/employee-wage-computation-problem/Employee.cs](oops-charp-practice/scenario-based/employee-wage-computation-problem/Employee.cs)
+- Orchestrator entrypoint with looped menu — 
+- Interface contract for wage operations — 
+- Utility implementation with business logic and randomness — 
+- Employee model encapsulating wage constants and state — 
 
 ### 📱 Features
 - Menu options: add employee, attendance check, daily wage, part-time wage, switch-based wage, monthly wage, and capped wage till hours/days limit.
