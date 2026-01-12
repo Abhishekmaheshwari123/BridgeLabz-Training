@@ -1,0 +1,67 @@
+commit 5110cf3a12b5691f24976de215714c503d755084
+Author: Abhishekmaheshwari123 <114015344+Abhishekmaheshwari123@users.noreply.github.com>
+Date:   Sun Jan 11 21:47:45 2026 +0530
+
+    [Abhishek] Sorting
+
+ .../gcr-codebase/sorting/BubbleSort.cs             | 36 +++++++++++++++++
+ .../gcr-codebase/sorting/CountingSort.cs           | 28 +++++++++++++
+ .../gcr-codebase/sorting/InsertionSort.cs          | 33 +++++++++++++++
+ .../gcr-codebase/sorting/MergeSort.cs              | 46 +++++++++++++++++++++
+ .../gcr-codebase/sorting/QuickSort.cs              | 47 ++++++++++++++++++++++
+ .../gcr-codebase/sorting/SelectionSort.cs          | 40 ++++++++++++++++++
+ 6 files changed, 230 insertions(+)
+
+commit dc042c25b12a68223c0442539e24fd695055c53a
+Author: Abhishekmaheshwari123 <114015344+Abhishekmaheshwari123@users.noreply.github.com>
+Date:   Sun Jan 11 21:39:06 2026 +0530
+
+    [Abhishek] HeapSort.cs
+
+ .../gcr-codebase/sorting/HeapSort.cs               | 59 ++++++++++++++++++++++
+ 1 file changed, 59 insertions(+)
+
+commit 693cf08f796bc83310f754502e6c4d348d25092d
+Author: Abhishekmaheshwari123 <114015344+Abhishekmaheshwari123@users.noreply.github.com>
+Date:   Thu Jan 8 23:49:31 2026 +0530
+
+    [Abhishek] LinkedList
+
+ .../linkedlist/circular-linkedlist/RoundRobin.cs   |  55 ++++++++
+ .../circular-linkedlist/TaskScheduler.cs           |  61 +++++++++
+ .../circular-linkedlist/TicketReservation.cs       |  58 +++++++++
+ .../doubly-linkedlist/LibraryManagment.cs          |  54 ++++++++
+ .../linkedlist/doubly-linkedlist/MovieManagment.cs |  98 ++++++++++++++
+ .../linkedlist/doubly-linkedlist/UndoRedo.cs       |  52 ++++++++
+ .../singly-linkedlist/InventoryManagment.cs        |  53 ++++++++
+ .../linkedlist/singly-linkedlist/SocialMedia.cs    |  49 +++++++
+ .../linkedlist/singly-linkedlist/StudentRecord.cs  | 141 +++++++++++++++++++++
+ 9 files changed, 621 insertions(+)
+
+commit 6dfe794b7a985e6a379c2b1801daa5793d8be558
+Author: Abhishekmaheshwari123 <114015344+Abhishekmaheshwari123@users.noreply.github.com>
+Date:   Thu Jan 8 16:09:08 2026 +0530
+
+    [Abhishek] Readme update
+
+ README.md | 770 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 770 insertions(+)
+
+commit 826b6b2eacfad71f36a9b2617818a29c142404e8
+Author: Abhishekmaheshwari123 <114015344+Abhishekmaheshwari123@users.noreply.github.com>
+Date:   Thu Dec 18 15:32:13 2025 +0530
+
+    [Abhishek] modify .gitignore
+
+ .gitignore | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 5d8a0cbe85eaf139aa6682cd25230c5e201a19fd
+Author: Abhishekmaheshwari123 <114015344+Abhishekmaheshwari123@users.noreply.github.com>
+Date:   Thu Dec 18 15:23:06 2025 +0530
+
+    [Abhishek] first commit
+
+ .gitignore | 2 ++
+ README.md  | 1 +
+ 2 files changed, 3 insertions(+)
