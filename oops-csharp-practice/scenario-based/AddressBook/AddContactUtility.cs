@@ -1,227 +1,244 @@
 using System;
-using System.Dynamic;
-using System.Runtime.CompilerServices;
+using System.Collections.Generic;
+
 class AddContactUtility : IContact
 {
-    Contact[] Persons = new Contact[100];
-    int Index = 0;
-    public void AddPerson(Contact Person)
+
+    Dictionary<string, Contact[]> AddressBooks = new Dictionary<string, Contact[]>();
+    Dictionary<string, int> Indexes = new Dictionary<string, int>();
+
+    // UC:2 Add Person
+    public void AddPerson(Contact person)
     {
-        Persons[Index] = Person;
+        Console.WriteLine("Enter the name of AddressBook:");
+        string bookName = Console.ReadLine();
+
+        if (!AddressBooks.ContainsKey(bookName))
+        {
+            Console.WriteLine("AddressBook not found.");
+            return;
+        }
+
+        AddressBooks[bookName][Indexes[bookName]] = person;
+        Indexes[bookName]++;
     }
 
+    // UC:3 Edit Person
     public void EditPersonUsingName()
     {
-        Persons[OldInfoPerson()] = updatedInformation();
+        string info = OldInfoPerson();
+        if (info == null) return;
+
+        string[] data = info.Split(' ');
+        string book = data[0];
+        int index = int.Parse(data[1]);
+
+        AddressBooks[book][index] = InformationOfperson();
+        Console.WriteLine("Person updated successfully");
     }
 
-
-    public void AddMultipleUsers()
-    {
-        Console.WriteLine("Enter the number of users you want to Add");
-        int numberOfUsers = int.Parse(Console.ReadLine());
-        for(int i = 0; i < numberOfUsers; i++)
-        {
-            Persons[Index] = InformationOfperson();
-            Index++;
-        }
-    }
-
+    // UC:4 Delete Person
     public void DeletePerson()
     {
-        int index = OldInfoPerson();
-        if(index < 0 || index >= Index)
+        string info = OldInfoPerson();
+        if (info == null) return;
+
+        string[] data = info.Split(' ');
+        string book = data[0];
+        int index = int.Parse(data[1]);
+
+        ShiftLeft(book, index);
+        Indexes[book]--;
+
+        Console.WriteLine("Person deleted successfully");
+    }
+
+    void ShiftLeft(string book, int deleteIndex)
+    {
+        Contact[] persons = AddressBooks[book];
+        int count = Indexes[book];
+
+        for (int i = deleteIndex; i < count - 1; i++)
         {
-            Console.WriteLine("No Name found");
-            Console.WriteLine("If you want to delete press 3");
-            int ele = int.Parse(Console.ReadLine());
-            if(ele == 3) DeletePerson();
-            return ;
+            persons[i] = persons[i + 1];
         }
-        shift(index , Persons);
-        Index--;
+        persons[count - 1] = null;
     }
 
-
-    void shift(int index, Contact[] Persons)
+    // UC:5 Add Multiple Users
+    public void AddMultipleUsers()
     {
-        int i = index;
-        for(; i < Index-1 ; i++)
+        Console.WriteLine("Enter AddressBook name:");
+        string book = Console.ReadLine();
+
+        if (!AddressBooks.ContainsKey(book))
         {
-            Persons[i] = Persons[i+1];
+            Console.WriteLine("AddressBook not found. Creating one.");
+            AddAddressBook();
+            return;
         }
-        Persons[Index - 1] = null;
+
+        Console.WriteLine("Enter number of users:");
+        int n = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < n; i++)
+        {
+            AddressBooks[book][Indexes[book]] = InformationOfperson();
+            Indexes[book]++;
+        }
     }
 
-    public Contact updatedInformation()
+    // UC:6 Add AddressBook
+    public void AddAddressBook()
     {
-        return InformationOfperson();
-    }
-    public int OldInfoPerson()
-    {
-        Console.WriteLine("Enter the name");
+        Console.WriteLine("Enter new AddressBook name:");
         string name = Console.ReadLine();
-        for(int i = 0; i < Index; i++)
+
+        if (AddressBooks.ContainsKey(name))
         {
-            if (Persons[i].UserFirstName.Equals(name))
-            {
-                return i;
-            }
+            Console.WriteLine("AddressBook already exists");
+            return;
         }
-        Console.WriteLine("No name Found, Please Retry");
-        return OldInfoPerson();
+
+        AddressBooks[name] = new Contact[100];
+        Indexes[name] = 0;
+        Console.WriteLine("AddressBook created successfully");
     }
+
+    // Find person
+    public string OldInfoPerson()
+    {
+        Console.WriteLine("Enter AddressBook name:");
+        string book = Console.ReadLine();
+
+        if (!AddressBooks.ContainsKey(book))
+        {
+            Console.WriteLine("AddressBook not found");
+            return null;
+        }
+
+        Console.WriteLine("Enter Person First Name:");
+        string name = Console.ReadLine();
+
+        for (int i = 0; i < Indexes[book]; i++)
+        {
+            if (AddressBooks[book][i].UserFirstName.Equals(name))
+                return book + " " + i;
+        }
+
+        Console.WriteLine("Person not found");
+        return null;
+    }
+
+    // Create Contact
     public Contact InformationOfperson()
     {
-        string Firstname = getFName();
-        string lastname = getLname();
-        string address = getAddress();
-        string city = getCity(); 
-        string state = getState()   ;
-        string zip = getZip();
-        string phoneNumber = getPhone();
-        string email = getEmail();
-
-        Contact person = new Contact(Firstname , lastname, address , city , state , zip , phoneNumber,  email);
-        return person;
-
-
+        return new Contact(
+            GetFirstName(),
+            GetLastName(),
+            GetAddress(),
+            GetCity(),
+            GetState(),
+            GetZip(),
+            GetPhone(),
+            GetEmail()
+        );
     }
-    string getEmail()
+
+    string GetFirstName()
     {
-        Console.Write("Enter the Email: ");
-        string email = Console.ReadLine();
-        Console.WriteLine();
-
-        int atIndex = -1;
-        int dotIndex = -1;
-
-        for (int i = 0; i < email.Length; i++)
+        while (true)
         {
-            if (email[i] == '@') atIndex = i;
-            if (email[i] == '.') dotIndex = i;
+            Console.Write("Enter First Name: ");
+            string name = Console.ReadLine();
+            if (IsOnlyLetters(name)) return name;
+            Console.WriteLine("Invalid name");
         }
-
-        if (atIndex <= 0 || dotIndex <= atIndex + 1 || dotIndex == email.Length - 1)
-        {
-            Console.WriteLine("Invalid Email");
-            return getEmail();
-        }
-
-        return email;
     }
 
-    string getPhone()
+    string GetLastName()
     {
-        Console.Write("Enter the Phone Number: ");
-        string phone = Console.ReadLine();
-        Console.WriteLine();
-
-        if (phone.Length != 10 || (phone.Length > 1 && phone[0] == '0'))
+        while (true)
         {
-            Console.WriteLine("Invalid Phone Number");
-            return getPhone();
+            Console.Write("Enter Last Name: ");
+            string name = Console.ReadLine();
+            if (IsOnlyLetters(name)) return name;
+            Console.WriteLine("Invalid name");
         }
-
-
-        for (int i = 0; i < phone.Length; i++)
-        {
-            if (phone[i] < '0' || phone[i] > '9')
-            {
-                Console.WriteLine("Invalid Phone Number");
-                return getPhone();
-            }
-        }
-
-        return phone;
     }
 
-    string getZip()
+    string GetCity()
     {
-        Console.Write("Enter the ZIP Code: ");
-        string zip = Console.ReadLine();
-        Console.WriteLine();
-
-        if (zip.Length != 6)
+        while (true)
         {
-            Console.WriteLine("Invalid ZIP Code");
-            return getZip();
+            Console.Write("Enter City: ");
+            string city = Console.ReadLine();
+            if (IsOnlyLetters(city)) return city;
+            Console.WriteLine("Invalid city");
         }
-
-        for (int i = 0; i < zip.Length; i++)
-        {
-            if (zip[i] < '0' || zip[i] > '9')
-            {
-                Console.WriteLine("Invalid ZIP Code");
-                return getZip();
-            }
-        }
-
-        return zip;
     }
 
-
-    string getState()
+    string GetState()
     {
-         Console.Write("Enter the state: ");
-        string state = Console.ReadLine();
-        Console.WriteLine();
-        for(int i = 0; i < state.Length; i++)
+        while (true)
         {
-            if(state[i] > 'z' || state[i] < 'a') return getState();
+            Console.Write("Enter State: ");
+            string state = Console.ReadLine();
+            if (IsOnlyLetters(state)) return state;
+            Console.WriteLine("Invalid state");
         }
-
-        return state;
     }
 
-    string getCity()
+    string GetAddress()
     {
-        Console.Write("Enter the city: ");
-        string city = Console.ReadLine();
-        Console.WriteLine();
-        for(int i = 0; i < city.Length; i++)
+        Console.Write("Enter Address: ");
+        return Console.ReadLine();
+    }
+
+    string GetZip()
+    {
+        while (true)
         {
-            if(city[i] > 'z' || city[i] < 'a') return getCity();
+            Console.Write("Enter ZIP: ");
+            string zip = Console.ReadLine();
+            if (zip.Length == 6 && IsOnlyDigits(zip)) return zip;
+            Console.WriteLine("Invalid ZIP");
         }
-
-        return city;
     }
 
-    string getAddress()
+    string GetPhone()
     {
-        Console.Write("Enter the address: ");
-        string address = Console.ReadLine();
-        Console.WriteLine();
-        return address;
-    }
-
-    string getLname()
-    {
-        Console.Write("Enter the last Name: ");
-        string lastname = Console.ReadLine();
-        Console.WriteLine();
-        for(int i = 0; i < lastname.Length; i++)
+        while (true)
         {
-            if(lastname[i] > 'z' || lastname[i] < 'a') {
-                Console.WriteLine("Invalid Name");
-                return getLname();
-            }
+            Console.Write("Enter Phone: ");
+            string phone = Console.ReadLine();
+            if (phone.Length == 10 && IsOnlyDigits(phone)) return phone;
+            Console.WriteLine("Invalid phone");
         }
-        return lastname;
-    }
-    string getFName()
-    {
-        Console.Write("Enter the first Name: ");
-        string firstname = Console.ReadLine();
-        Console.WriteLine();
-        for(int i = 0; i < firstname.Length; i++)
-        {
-            if(firstname[i] > 'z' || firstname[i] < 'a') {
-                Console.WriteLine("Invalid Name");
-                return getFName();
-            }
-        }
-        return firstname;
     }
 
+    string GetEmail()
+    {
+        while (true)
+        {
+            Console.Write("Enter Email: ");
+            string email = Console.ReadLine();
+            if (email.Contains("@") && email.Contains(".")) return email;
+            Console.WriteLine("Invalid email");
+        }
+    }
+
+    bool IsOnlyLetters(string s)
+    {
+        foreach (char c in s)
+            if (!char.IsLetter(c)) return false;
+        return true;
+    }
+
+    bool IsOnlyDigits(string s)
+    {
+        foreach (char c in s)
+            if (!char.IsDigit(c)) return false;
+        return true;
+    }
 }

@@ -1,38 +1,62 @@
 using System;
-using System.Collections;
-using System.ComponentModel.DataAnnotations;
-using System.Dynamic;
+
 class AddressMenu
 {
     AddContactUtility utility = new AddContactUtility();
+
     public void show()
     {
-        int n ;
+        int choice;
+
         do
         {
-            Console.WriteLine("Press 1 to Add Perons");
-            Console.WriteLine("Press 2 to Edit a Person using Name");
-            Console.WriteLine("Press 3 to Delete a Person using Name");
-            n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n===== ADDRESS BOOK MENU =====");
+            Console.WriteLine("1. Add Person");
+            Console.WriteLine("2. Edit Person using Name");
+            Console.WriteLine("3. Delete Person using Name");
+            Console.WriteLine("4. Add Multiple Users");
+            Console.WriteLine("5. Add Address Book");
+            Console.WriteLine("6. Exit");
+            Console.Write("Enter your choice: ");
 
-            switch (n)
+            choice = int.Parse(Console.ReadLine());
+
+            switch (choice)
             {
-                case 1 : utility.AddPerson(utility.InformationOfperson());
-                    Console.WriteLine("Person added Successfully");
-                    break;
-                case 2 : utility.EditPersonUsingName();
-                    Console.WriteLine("Person Edited Successfully");
-                    break;
-                case 3 : utility.DeletePerson();
-                    Console.WriteLine("Person Deleted");
-                    break;
-                case 4: utility.AddMultipleUsers();
-                    Console.WriteLine("Persons Added Successfully");
+                case 1:
+                    utility.AddPerson(utility.InformationOfperson());
+                    Console.WriteLine("Person added successfully");
                     break;
 
+                case 2:
+                    utility.EditPersonUsingName();
+                    Console.WriteLine("Person edited successfully");
+                    break;
 
+                case 3:
+                    utility.DeletePerson();
+                    Console.WriteLine("Person deleted successfully");
+                    break;
+
+                case 4:
+                    utility.AddMultipleUsers();
+                    Console.WriteLine("Users added successfully");
+                    break;
+
+                case 5:
+                    utility.AddAddressBook();
+                    Console.WriteLine("Address book added successfully");
+                    break;
+
+                case 6:
+                    Console.WriteLine("Exiting application...");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid choice. Please try again.");
+                    break;
             }
-        }
-        while(n != 5);
+
+        } while (choice != 6); // ✅ Exit only when user selects Exit
     }
 }
