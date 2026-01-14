@@ -15,18 +15,41 @@ class AddContactUtility : IContact
         Persons[OldInfoPerson()] = updatedInformation();
     }
 
+    public void DeletePerson()
+    {
+        int index = OldInfoPerson();
+        if(index < 0 || index >= Index)
+        {
+            Console.WriteLine("No Name found");
+            Console.WriteLine("If you want to delete press 3");
+            int ele = int.Parse(Console.ReadLine());
+            if(ele == 3) DeletePerson();
+            return ;
+        }
+        shift(index , Persons);
+        Index--;
+    }
+
+
+    void shift(int index, Contact[] Persons)
+    {
+        int i = index;
+        for(; i < Index-1 ; i++)
+        {
+            Persons[i] = Persons[i+1];
+        }
+        Persons[Index - 1] = null;
+    }
 
     public Contact updatedInformation()
     {
         return InformationOfperson();
     }
-
-
     public int OldInfoPerson()
     {
-        Console.WriteLine("Enter the name to Edit");
+        Console.WriteLine("Enter the name");
         string name = Console.ReadLine();
-        for(int i = 0; i < Persons.Length; i++)
+        for(int i = 0; i < Index; i++)
         {
             if (Persons[i].UserFirstName.Equals(name))
             {
@@ -36,10 +59,6 @@ class AddContactUtility : IContact
         Console.WriteLine("No name Found, Please Retry");
         return OldInfoPerson();
     }
-
-
-
-
     public Contact InformationOfperson()
     {
         string Firstname = getFName();
