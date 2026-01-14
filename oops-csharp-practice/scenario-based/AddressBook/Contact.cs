@@ -23,4 +23,18 @@ class Contact
         UserPhoneNumber = userPhoneNumber;
         UserEmail = userEmail;        
     }
+
+    public override string ToString()
+    {
+
+        return UserFirstName+"  "+
+              UserLastName+" "+
+              UserAddress+" "+
+              UserCity+" "+
+              UserState+" "+
+              UserZipCode+" "+
+              UserPhoneNumber+" "+
+              UserEmail;
+    }
+
 }
