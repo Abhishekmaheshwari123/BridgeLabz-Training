@@ -19,6 +19,15 @@ class AddContactUtility : IContact
             return;
         }
 
+        for(int i = 0; i < Indexes[bookName]; i++)
+        {
+            if (Existed(person,bookName))      // UC: 7  checking for duplicates person in particular AddressBook
+            {
+                Console.WriteLine("This Person already Existed");
+                return ;
+            }
+        }
+
         AddressBooks[bookName][Indexes[bookName]] = person;
         Indexes[bookName]++;
     }
@@ -83,8 +92,11 @@ class AddContactUtility : IContact
 
         for (int i = 0; i < n; i++)
         {
-            AddressBooks[book][Indexes[book]] = InformationOfperson();
-            Indexes[book]++;
+            if(Existed(InformationOfperson(),book))Console.WriteLine("This user already Exist");
+            else {
+                AddressBooks[book][Indexes[book]] = InformationOfperson();
+                Indexes[book]++;
+            }
         }
     }
 
@@ -128,6 +140,16 @@ class AddContactUtility : IContact
 
         Console.WriteLine("Person not found");
         return null;
+    }
+
+
+    Boolean Existed(Contact P, string NameofAddressBook)    // checking for duplicates object with in same AddressBook
+    {
+        for(int i = 0; i < Indexes[NameofAddressBook]; i++)
+        {
+            if (AddressBooks[NameofAddressBook][i] == P) return true;
+        }
+        return false;
     }
 
     // Create Contact
