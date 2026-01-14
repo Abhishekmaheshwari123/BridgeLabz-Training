@@ -1,14 +1,14 @@
 using System;
-class Contact
+public class Contact
 {
-    string UserFirstName;
-    string UserLastName;
-    string UserAddress;
-    string UserCity;
-    string UserState;
-    string UserZipCode;
-    string UserPhoneNumber;
-    string UserEmail;
+    public string UserFirstName;
+    public string UserLastName;
+    public string UserAddress;
+    public string UserCity;
+    public string UserState;
+    public string UserZipCode;
+    public string UserPhoneNumber;
+    public string UserEmail;
 
 
     public Contact(string userFirstName, string userLastName, string userAddress, string userCity,
