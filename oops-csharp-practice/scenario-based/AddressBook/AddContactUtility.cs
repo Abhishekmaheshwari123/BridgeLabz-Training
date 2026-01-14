@@ -15,6 +15,18 @@ class AddContactUtility : IContact
         Persons[OldInfoPerson()] = updatedInformation();
     }
 
+
+    public void AddMultipleUsers()
+    {
+        Console.WriteLine("Enter the number of users you want to Add");
+        int numberOfUsers = int.Parse(Console.ReadLine());
+        for(int i = 0; i < numberOfUsers; i++)
+        {
+            Persons[Index] = InformationOfperson();
+            Index++;
+        }
+    }
+
     public void DeletePerson()
     {
         int index = OldInfoPerson();

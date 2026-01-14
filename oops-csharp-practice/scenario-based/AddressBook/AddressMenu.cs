@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.ComponentModel.DataAnnotations;
 using System.Dynamic;
 class AddressMenu
@@ -25,6 +26,10 @@ class AddressMenu
                 case 3 : utility.DeletePerson();
                     Console.WriteLine("Person Deleted");
                     break;
+                case 4: utility.AddMultipleUsers();
+                    Console.WriteLine("Persons Added Successfully");
+                    break;
+
 
             }
         }
