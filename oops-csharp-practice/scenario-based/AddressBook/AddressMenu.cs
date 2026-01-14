@@ -16,7 +16,9 @@ class AddressMenu
             Console.WriteLine("3. Delete Person using Name");
             Console.WriteLine("4. Add Multiple Users");
             Console.WriteLine("5. Add Address Book");
-            Console.WriteLine("6. Exit");
+            Console.WriteLine("6. Search Book By its city Or State");
+
+            Console.WriteLine("7. Exit");
             Console.Write("Enter your choice: ");
 
             choice = int.Parse(Console.ReadLine());
@@ -48,7 +50,11 @@ class AddressMenu
                     Console.WriteLine("Address book added successfully");
                     break;
 
-                case 6:
+                case 6: 
+                    utility.Search();
+                    break;
+
+                case 7:
                     Console.WriteLine("Exiting application...");
                     break;
 
@@ -57,6 +63,6 @@ class AddressMenu
                     break;
             }
 
-        } while (choice != 6); // ✅ Exit only when user selects Exit
+        } while (choice != 7);
     }
 }

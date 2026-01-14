@@ -117,6 +117,32 @@ class AddContactUtility : IContact
         Console.WriteLine("AddressBook created successfully");
     }
 
+    // UC:8 search Person with city or state in all the addressBooks
+
+    public void Search()
+    {
+        string CityOrState = Console.ReadLine();
+        bool found = false;
+        foreach (var books in AddressBooks)
+        {
+            string AddressBookName = books.Key;
+            Contact[]Person = books.Value;
+            for(int j = 0; j < Indexes[AddressBookName]; j++)
+            {
+                if(Person[j].UserCity.Equals(CityOrState) || Person[j].UserState.Equals(CityOrState))
+                {
+                    Console.WriteLine(Person[j].ToString());
+                    Console.WriteLine("-----------");
+                    found = true;
+                }
+            }
+        }
+        if (!found)
+        {
+            Console.WriteLine("No Contact Found");
+        }
+    }
+
     // Find person
     public string OldInfoPerson()
     {
