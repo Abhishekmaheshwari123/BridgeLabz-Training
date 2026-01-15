@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 class AddContactUtility : IContact
 {
@@ -8,17 +9,19 @@ class AddContactUtility : IContact
     Dictionary<string, int> Indexes = new Dictionary<string, int>();
 
     // UC:2 Add Person
-    public void AddPerson(Contact person)
+    public void AddPerson()
     {
         Console.WriteLine("Enter the name of AddressBook:");
         string bookName = Console.ReadLine();
 
         if (!AddressBooks.ContainsKey(bookName))
         {
-            Console.WriteLine("AddressBook not found.");
-            return;
+            Console.WriteLine("AddressBook not found. Please Add a AddressBook");
+            AddAddressBook();
+            
         }
 
+        Contact person = InformationOfperson();
         for(int i = 0; i < Indexes[bookName]; i++)
         {
             if (Existed(person,bookName))      // UC: 7  checking for duplicates person in particular AddressBook
@@ -27,7 +30,6 @@ class AddContactUtility : IContact
                 return ;
             }
         }
-
         AddressBooks[bookName][Indexes[bookName]] = person;
         Indexes[bookName]++;
     }
@@ -117,10 +119,44 @@ class AddContactUtility : IContact
         Console.WriteLine("AddressBook created successfully");
     }
 
-    // UC:8 search Person with city or state in all the addressBooks
-
-    public void Search()
+    // UC:7 search Person with city or state in all the addressBooks
+    public void CountPersonsWithCityOrState()
     {
+        Dictionary<string, int> stateCount = new Dictionary<string, int>();
+
+        foreach (var books in AddressBooks)
+        {
+            string bookName = books.Key;
+            Contact[] persons = books.Value;
+
+            for (int j = 0; j < Indexes[bookName]; j++)
+            {
+                string state = persons[j].UserState;
+                string city = persons[j].UserCity;
+
+                if (!stateCount.ContainsKey(state))
+                    stateCount[state] = 0;
+
+                stateCount[state]++;
+
+                if (!stateCount.ContainsKey(city))
+                {
+                    stateCount[city] = 0;
+                }
+                stateCount[city]++;
+            }
+        }
+
+        foreach (var entry in stateCount)
+        {
+            Console.WriteLine(entry.Key + " -> " + entry.Value);
+        }
+
+    }
+
+    public void SearchForUser()
+    {
+        Console.WriteLine("Enter the name of City or State");
         string CityOrState = Console.ReadLine();
         bool found = false;
         foreach (var books in AddressBooks)
@@ -135,13 +171,74 @@ class AddContactUtility : IContact
                     Console.WriteLine("-----------");
                     found = true;
                 }
-            }
+            }            
         }
         if (!found)
-        {
+        {            
             Console.WriteLine("No Contact Found");
         }
     }
+
+
+        // UC: 8  Sort the AddressBook By Name
+    public void sortAddressBookByName()
+    {
+        Console.WriteLine("Enter the name of Address Book which you want Sort");        
+        string NameofAddressBook = Console.ReadLine();
+        Contact[]Persons = !AddressBooks.ContainsKey(NameofAddressBook) ? null : AddressBooks[NameofAddressBook];
+        if(Persons == null)
+        {
+            Console.WriteLine("No AddressBook Name found");
+            return ;
+        }
+        sort(Persons , Indexes[NameofAddressBook]);
+        Console.WriteLine("Sort Successfully");
+        Print(Persons);
+    }
+
+    void Print(Contact[] Persons)
+    {
+        foreach(Contact entry in Persons)
+        {
+            Console.WriteLine(entry.ToString());
+        }
+    }
+
+    void sort(Contact[] Persons, int length)
+    {
+        for(int i = 0; i < length; i++)
+        {
+            Contact PersonI = Persons[i];
+            for(int j = i+1; j < length; j++)
+            {
+                Contact PersonJ = Persons[j];
+                bool shouldSwap = false;
+                int firstNameCompare = string.Compare(PersonI.UserFirstName, PersonJ.UserFirstName, StringComparison.OrdinalIgnoreCase   );
+                if (firstNameCompare > 0)
+                {
+                    shouldSwap = true;
+                }
+                else if (firstNameCompare == 0)
+                {
+                    int lastNameCompare = string.Compare(
+                        PersonI.UserLastName,
+                        PersonJ.UserLastName,
+                        StringComparison.OrdinalIgnoreCase
+                    );
+
+                    if (lastNameCompare > 0)
+                        shouldSwap = true;
+                }
+                if (shouldSwap)
+                {
+                    Contact temp = Persons[i];
+                    Persons[i] = Persons[j];
+                    Persons[j] = temp;
+                }
+
+            }
+        }
+    }    
 
     // Find person
     public string OldInfoPerson()

@@ -28,12 +28,12 @@ public class Contact
     {
 
         return UserFirstName+"  "+
-              UserLastName+" "+
-              UserAddress+" "+
-              UserCity+" "+
-              UserState+" "+
-              UserZipCode+" "+
-              UserPhoneNumber+" "+
+              UserLastName+" -"+
+              UserAddress+" , "+
+              UserCity+", "+
+              UserState+", "+
+              UserZipCode+", "+
+              UserPhoneNumber+", "+
               UserEmail;
     }
 

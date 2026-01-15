@@ -16,9 +16,11 @@ class AddressMenu
             Console.WriteLine("3. Delete Person using Name");
             Console.WriteLine("4. Add Multiple Users");
             Console.WriteLine("5. Add Address Book");
-            Console.WriteLine("6. Search Book By its city Or State");
+            Console.WriteLine("6. Search User By its city Or State");
+            Console.WriteLine("7. Count User By its city Or State");
+            Console.WriteLine("8. Sort the Particular AddressBook");
 
-            Console.WriteLine("7. Exit");
+            Console.WriteLine("9. Exit");
             Console.Write("Enter your choice: ");
 
             choice = int.Parse(Console.ReadLine());
@@ -26,7 +28,7 @@ class AddressMenu
             switch (choice)
             {
                 case 1:
-                    utility.AddPerson(utility.InformationOfperson());
+                    utility.AddPerson();
                     Console.WriteLine("Person added successfully");
                     break;
 
@@ -51,10 +53,17 @@ class AddressMenu
                     break;
 
                 case 6: 
-                    utility.Search();
+                    utility.SearchForUser();
                     break;
 
                 case 7:
+                    utility.CountPersonsWithCityOrState();
+                    break;
+                case 8:
+                    utility.sortAddressBookByName();
+                    break;
+
+                case 9:
                     Console.WriteLine("Exiting application...");
                     break;
 
@@ -63,6 +72,6 @@ class AddressMenu
                     break;
             }
 
-        } while (choice != 7);
+        } while (choice != 9);
     }
 }
