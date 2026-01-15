@@ -1,4 +1,3 @@
-# BridgeLabz-Training
 # 🚀 BridgeLabz Training Progress
 
 Welcome to my **BridgeLabz Training Repository** 👋  
@@ -98,6 +97,7 @@ Completed **3 scenario-based OOP projects** demonstrating menu-driven applicatio
 ---
 
 ## 📋 Project 1: Mathematical Operations
+**File:** `oops-csharp-practice/scenario-based/MathematicalOperations.cs`
 
 ### 🔢 Features
 - **Interactive Menu:** Recursive menu system for continuous operation selection
@@ -117,6 +117,7 @@ Completed **3 scenario-based OOP projects** demonstrating menu-driven applicatio
 ---
 
 ## 🏦 Project 2: Bank System
+**File:** `oops-csharp-practice/scenario-based/BankSystem.cs`
 
 ### 🔐 Features
 - **Authentication System:**
@@ -151,7 +152,7 @@ Completed **3 scenario-based OOP projects** demonstrating menu-driven applicatio
 ---
 
 ## 🧾 Project 3: Invoice Generator
-
+**File:** `oops-charp-practice/scenario-based/InvoiceGenerator.cs`
 
 ### 🧮 Features
 - **Menu-Driven Flow:** Recursive menu to generate invoices or exit.
@@ -183,6 +184,7 @@ Completed **Cafeteria Ordering System** - A menu-driven application for food ord
 ---
 
 ## 🍔 Project 4: Cafeteria System
+**File:** `oops-csharp-practice/scenario-based/CafeteriaSystem.cs`
 
 ### 🍽️ Features
 - **Menu Display:** Shows 10 food items with indexed pricing
@@ -291,6 +293,7 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 ---
 
 ## 📝 Practice 1: Area of Circle
+**File:** `oops-charp-practice/gcr-code-base/csharp-class-object/AreaOfCircle.cs`
 
 ### 🔢 Features
 - **Class Design:**
@@ -315,6 +318,7 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 ---
 
 ## 👤 Practice 2: Employee Class
+**File:** `oops-charp-practice/gcr-code-base/csharp-class-object/EmployeeClass.cs`
 
 ### 💼 Features
 - **Class Design:**
@@ -337,6 +341,7 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 ---
 
 ## 📚 Practice 3: Handle Book Details
+**File:** `oops-charp-practice/gcr-code-base/csharp-class-object/HandleBookDetails.cs`
 ### 📖 Features
 - Three private fields: `title`, `author`, `price`
 - Parameterized constructor
@@ -358,32 +363,39 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 ## 🏗️ Constructor & Access Practice
 
 ### 📕 Book (Constructor with fields)
+- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/BookClass.cs](oops-charp-practice/gcr-code-base/csharp-constructors/BookClass.cs)
 - Parameterized constructor sets title, author, price
 - `Display()` prints a one-line summary of the book
 
 ### 🚗 Car Rental (Branching logic + constructor)
+- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/CarRental.cs](oops-charp-practice/gcr-code-base/csharp-constructors/CarRental.cs)
 - Constructor initializes customer name, model, rental days and triggers billing
 - Rate selection uses model-based conditional logic; `Display()` prints bill
 
 ### ⚪ Circle (Constructor + private helpers)
+- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/CircleClass.cs](oops-charp-practice/gcr-code-base/csharp-constructors/CircleClass.cs)
 - Constructor stores radius; private methods compute area and circumference
 - `Display()` shows both values using calculated results
 
 ### 🏨 Hotel Booking (Overloaded constructors + copy)
+- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/HotelBooking.cs](oops-charp-practice/gcr-code-base/csharp-constructors/HotelBooking.cs)
 - Demonstrates default, parameterized, and copy constructors
 - `Display()` outputs guest name, room type, and nights for each instance
 
 ### 📚 Library (Availability check with state toggle)
+- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/LibiraryClass.cs](oops-charp-practice/gcr-code-base/csharp-constructors/LibiraryClass.cs)
 - Constructor sets book metadata and availability flag
 - `Availability()` flips state on borrow; `Display()` summarizes book details
 
 ### 👤 Person (Copy constructor)
+- **File:** [oops-charp-practice/gcr-code-base/csharp-constructors/Person.cs](oops-charp-practice/gcr-code-base/csharp-constructors/Person.cs)
 - Parameterized constructor captures identity fields; copy constructor clones
 - `Display()` prints name, age, and city for original and copied instances
 
 ---
 
 ## 🚌 Project 5: Bus Route Distance Tracker
+**File:** oops-charp-practice/scenario-based/BusRouteDistanceTracker.cs
 
 ### 🛣️ Features
 - Fixed per-stop distance accumulator with running total display
@@ -398,6 +410,7 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 ---
 
 ## 🎁 Project 6: Festival Lucky Draw
+**File:** oops-charp-practice/scenario-based/FestivalLuckyDraw.cs
 
 ### 🎟️ Features
 - Validates positive integer input for lucky number entries
@@ -449,13 +462,13 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 - Readonly identifiers for immutable IDs (account numbers, roll numbers, ISBNs, product IDs, registrations).
 
 ### 🧩 Mini Systems & Files
-- Bank accounts with shared bank name, per-account balance display, and total account count — 
-- Employee roster with company-wide static name and total employee tracker — 
-- Hospital intake showing patient details and aggregate admissions — 
-- Library catalog with static library name and per-book display — 
-- Shopping cart applying a shared discount to products before summarizing totals —
-- University roster keeping static university name and student count — 
-- Vehicle registration with a static fee applied to each record — 
+- Bank accounts with shared bank name, per-account balance display, and total account count — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/BankSystem.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/BankSystem.cs)
+- Employee roster with company-wide static name and total employee tracker — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/EmployeeManagement.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/EmployeeManagement.cs)
+- Hospital intake showing patient details and aggregate admissions — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/HospitalManagement.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/HospitalManagement.cs)
+- Library catalog with static library name and per-book display — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/LibrarySystem.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/LibrarySystem.cs)
+- Shopping cart applying a shared discount to products before summarizing totals — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/ShoppingCart.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/ShoppingCart.cs)
+- University roster keeping static university name and student count — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/UniversityManagement.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/UniversityManagement.cs)
+- Vehicle registration with a static fee applied to each record — [oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/VehicleRegistrationSystem.cs](oops-charp-practice/gcr-code-base/csharp-this-sealed-static-keyword/VehicleRegistrationSystem.cs)
 
 ---
 
@@ -469,6 +482,13 @@ Completed **constructor, access-modifier, and instance practice** with six mini-
 - Method overriding for status reporting; method hiding when reusing display labels.
 - Using protected members for derived-class access while keeping fields scoped.
 
+### 🧩 Mini Systems & Files
+- Multilevel course catalog: Course → OnlineCourse → PaidOnlineCourse with fee and discount display — [oops-charp-practice/gcr-code-base/csharp-inheritance/multilevel-inheritance/CourseManagement.cs](oops-charp-practice/gcr-code-base/csharp-inheritance/multilevel-inheritance/CourseManagement.cs)
+- Multilevel retail orders: Order → ShippedOrder → DeliveredOrder with status via `GetOrderStatus()` and tracking/delivery info — [oops-charp-practice/gcr-code-base/csharp-inheritance/multilevel-inheritance/OnlineRetailSystem.cs](oops-charp-practice/gcr-code-base/csharp-inheritance/multilevel-inheritance/OnlineRetailSystem.cs)
+- Single-inheritance library: Book → Author combining publication metadata with author bio — [oops-charp-practice/gcr-code-base/csharp-inheritance/single-inheritance/LibraryManagement.cs](oops-charp-practice/gcr-code-base/csharp-inheritance/single-inheritance/LibraryManagement.cs)
+- Single-inheritance smart home: Device → Thermostat with status plus temperature setting — [oops-charp-practice/gcr-code-base/csharp-inheritance/single-inheritance/SmartHomeSystem.cs](oops-charp-practice/gcr-code-base/csharp-inheritance/single-inheritance/SmartHomeSystem.cs)
+
+---
 
 ### 🗓️ **Date: 05-01-2026**
 ### 🎯 Task of the Day
@@ -479,30 +499,32 @@ Implement **Hospital Patient Management System** with billing, doctor, and patie
 ---
 
 ## 🏥 Project 7: Hospital Patient Management System
+**Folder:** [oops-charp-practice/scenario-based/hospital-patient-management-system/](oops-charp-practice/scenario-based/hospital-patient-management-system/)
 
 ### 🏗️ Core Classes & Architecture
-- **Patients** - Base class for all patient types with ID and name —
+- **Patients** - Base class for all patient types with ID and name — [Patients.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/Patients.cs)
   - `InPatient` - Derived class for admitted patients with length of stay tracking
   - `OutPatient` - Derived class for visiting patients with visit date tracking
   - `IPatient` - Interface contract for patient operations
 
-- **Doctors** - Healthcare provider class managing assigned patients — 
+- **Doctors** - Healthcare provider class managing assigned patients — [Doctors.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/Doctors.cs)
+  - Maintains array of assigned patients
   - Consultation fee management
   - `IDoctor` - Interface contract for doctor operations
 
-- **Bills** - Billing computation with hospital charges — 
+- **Bills** - Billing computation with hospital charges — [Bills.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/Bills.cs)
   - Room charges calculation (₹1500 per day)
   - Doctor fee aggregation
   - `IPayable` - Interface contract for billing operations
 
-- **Menu** - User interface orchestration —
+- **Menu** - User interface orchestration — [Menu.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/Menu.cs)
   - Menu display and option presentation
   - 5 main operations: View Patients, View Doctors, Doctor's Patients, Generate Bill, Exit
 
-- **Utility** - Helper functions — 
+- **Utility** - Helper functions — [Utility.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/Utility.cs)
   - Formatting utilities for consistent output
 
-- **HospitalManagement** - Main entry point with workflow — 
+- **HospitalManagement** - Main entry point with workflow — [HospitalManagement.cs](oops-charp-practice/scenario-based/hospital-patient-management-system/HospitalManagement.cs)
   - Sample data initialization
   - Menu-driven control loop
   - Operation delegation based on user choice
@@ -600,6 +622,7 @@ Implement **Call Log Management System** with service interfaces and utility pat
 ---
 
 ## 📞 Project 8: Call Log Management System
+**File:** `oops-charp-practice/scenario-based/TetecomSystem.cs`
 
 ### 📱 Features
 - **Core Classes:**
@@ -719,13 +742,13 @@ Implement **Employee Wage Computation System** with interface-driven utilities a
 ---
 
 ## 💼 Project 10: Employee Wage Computation System
-
+**File:** [oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeMain.cs](oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeMain.cs)
 
 ### 🧱 Core Classes
-- Orchestrator entrypoint with looped menu — 
-- Interface contract for wage operations — 
-- Utility implementation with business logic and randomness — 
-- Employee model encapsulating wage constants and state — 
+- Orchestrator entrypoint with looped menu — [oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeMenu.cs](oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeMenu.cs)
+- Interface contract for wage operations — [oops-charp-practice/scenario-based/employee-wage-computation-problem/IEmployee.cs](oops-charp-practice/scenario-based/employee-wage-computation-problem/IEmployee.cs)
+- Utility implementation with business logic and randomness — [oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeUtilityImpl.cs](oops-charp-practice/scenario-based/employee-wage-computation-problem/EmployeeUtilityImpl.cs)
+- Employee model encapsulating wage constants and state — [oops-charp-practice/scenario-based/employee-wage-computation-problem/Employee.cs](oops-charp-practice/scenario-based/employee-wage-computation-problem/Employee.cs)
 
 ### 📱 Features
 - Menu options: add employee, attendance check, daily wage, part-time wage, switch-based wage, monthly wage, and capped wage till hours/days limit.
@@ -738,6 +761,223 @@ Implement **Employee Wage Computation System** with interface-driven utilities a
 - Menu-to-service orchestration using a sealed menu class and upcasting to the interface for flexibility.
 - Switch-case and loop control to model daily attendance variations and cumulative wage rules.
 - Encapsulation of wage parameters in the model to avoid magic numbers in calculations.
+
+---
+
+### 🗓️ **Date: 08-01-2026**
+### 🎯 Task of the Day
+Implement **Smart Home Automation System** with appliance management and control features.
+
+**Project 11:** Smart Home Automation System - Connect, manage, and control appliances through a menu-driven console hub.
+
+---
+
+## 🏠 Project 11: Smart Home Automation System
+**Folder:** [oops-charp-practice/scenario-based/smart-home-automation-system/](oops-charp-practice/scenario-based/smart-home-automation-system/)
+
+### 🏗️ Core Classes & Architecture
+- Entry point wires the utility and menu for the smart home hub — [SmartHome.cs](oops-charp-practice/scenario-based/smart-home-automation-system/SmartHome.cs)
+- Menu orchestrates add/list operations for appliances — [ApplianceMenu.cs](oops-charp-practice/scenario-based/smart-home-automation-system/ApplianceMenu.cs)
+- Utility stores connected devices and triggers control hooks — [ApplianceUtility.cs](oops-charp-practice/scenario-based/smart-home-automation-system/ApplianceUtility.cs)
+- Base appliance metadata captured once for all devices — [Appliance.cs](oops-charp-practice/scenario-based/smart-home-automation-system/Appliance.cs)
+- Control contract with concrete implementations per device: [IControllable.cs](oops-charp-practice/scenario-based/smart-home-automation-system/IControllable.cs), [Fan.cs](oops-charp-practice/scenario-based/smart-home-automation-system/Fan.cs), [AC.cs](oops-charp-practice/scenario-based/smart-home-automation-system/AC.cs), [LightBulb.cs](oops-charp-practice/scenario-based/smart-home-automation-system/LightBulb.cs)
+
+### 🔧 Features
+- Menu options to add Fan, AC, or LightBulb devices, view connected appliances, or exit the hub.
+- Fixed-capacity registry ensures appliances only connect while slots remain, with feedback when full.
+- Control trigger invokes `IControllable` implementations to simulate turning devices on when listing connections.
+- Console-driven workflow for quick setup and visibility into connected smart appliances.
+
+### 📚 Key Learnings
+- Interface-driven control flow enables polymorphic actions across appliance types.
+- Composition centralizes appliance registration while keeping device behaviors encapsulated.
+- Menu loops with switch-based branching simplify user-driven automation tasks.
+- Capacity checks guard against over-allocation when adding new devices.
+
+### 🚀 Future Enhancements
+- Instantiate specific device classes (Fan/AC/LightBulb) directly from the menu to use their control behaviors for every connection.
+- Add granular controls (on/off, speed, brightness, temperature) and per-device status tracking.
+- Persist connected devices and states between sessions for a continuous smart home experience.
+
+---
+
+### 🗓️ **Date: 09-01-2026**
+### 🎯 Task of the Day
+Implement **Fitness Tracker System** with user management and exercise tracking features for comprehensive fitness monitoring.
+
+**Project 12:** Fitness Tracker System - Complete user profile management and workout logging with statistics and goal tracking.
+
+---
+
+## 💪 Project 12: Fitness Tracker System
+**Folder:** [oops-charp-practice/scenario-based/fitness-tracker/](oops-charp-practice/scenario-based/fitness-tracker/)
+
+### 🏗️ Core Classes & Architecture
+- Entry point orchestrates the fitness application workflow — [FitnessMain.cs](oops-charp-practice/scenario-based/fitness-tracker/FitnessMain.cs)
+- User interface with menu options for fitness operations — [FitnessMenu.cs](oops-charp-practice/scenario-based/fitness-tracker/FitnessMenu.cs)
+- Business logic implementation for fitness tracking — [FitnessUtilityImpl.cs](oops-charp-practice/scenario-based/fitness-tracker/FitnessUtilityImpl.cs)
+- Interface contract for trackable fitness operations — [ITrackable.cs](oops-charp-practice/scenario-based/fitness-tracker/ITrackable.cs)
+- User profile data model with personal and fitness metrics — [UserProfile.cs](oops-charp-practice/scenario-based/fitness-tracker/UserProfile.cs)
+- Workout data model for exercise logging — [WorkOut.cs](oops-charp-practice/scenario-based/fitness-tracker/WorkOut.cs)
+
+### 🔧 Features
+
+**User Management:**
+- Create new user profiles with personal information (name, age, gender, weight, height)
+- Store user data with unique user ID generation
+- Display user profile details with calculated metrics
+- Update user weight and fitness goals
+- BMI calculation based on height and weight
+
+**Workout Tracking:**
+- Log exercises with workout type, duration, calories burned, and date
+- Support multiple exercise types (Running, Cycling, Swimming, Gym, Yoga, etc.)
+- Track workout history per user
+- Calculate total workout duration and calories burned
+
+**Statistics & Analysis:**
+- View user-specific workout history
+- Calculate total workouts completed
+- Aggregate calories burned across workouts
+- Track workout frequency and consistency
+- Workout performance metrics per exercise type
+
+**Menu Operations:**
+1. **Create User Profile** - Add new user to the fitness system
+2. **Add Workout** - Log exercise session for a user
+3. **View User Profile** - Display user details and fitness metrics
+4. **View Workout History** - Show all workouts for selected user
+5. **Calculate Fitness Stats** - Display comprehensive fitness statistics
+6. **Exit** - Graceful application termination
+
+### 📚 Key Learnings
+
+**Interface Design:**
+- `ITrackable` interface defines contract for fitness operations (AddUser, AddWorkout, GetUserStats)
+- Separates interface definition from implementation for flexibility
+
+**Data Models:**
+- `UserProfile` encapsulates personal and fitness information
+- `WorkOut` represents individual exercise sessions
+- Proper encapsulation with private fields and public properties
+
+**Utility Pattern:**
+- `FitnessUtilityImpl` implements ITrackable with core business logic
+- Uses List<T> for dynamic user and workout storage
+- Filtering and aggregation operations on collections
+
+**Menu-Driven Architecture:**
+- `FitnessMenu` handles user interaction and input validation
+- Recursive menu pattern for continuous operations
+- Clear delegation from menu to utility
+
+**Collection Management:**
+- Using List<UserProfile> for flexible user storage
+- Nested List<WorkOut> within UserProfile for workout history
+- LINQ-style filtering for finding users and calculating statistics
+
+**Calculations & Metrics:**
+- BMI calculation: weight (kg) / (height (m))²
+- Calorie tracking and aggregation
+- Workout duration summation
+- Fitness progress monitoring
+
+### 💡 OOP Principles Applied
+✅ **Encapsulation** - Private fields with public properties for controlled access  
+✅ **Abstraction** - ITrackable interface hides implementation details  
+✅ **Single Responsibility** - Separate classes for user, workout, and menu concerns  
+✅ **Dependency Injection** - Menu depends on ITrackable interface, not concrete implementation  
+✅ **Composition** - UserProfile contains collection of WorkOut objects  
+✅ **Separation of Concerns** - UI (FitnessMenu), Logic (FitnessUtilityImpl), Data (Models)  
+
+### 🚀 Future Enhancements
+- Goal setting and progress tracking towards fitness objectives
+- Nutrition logging and dietary tracking
+- Integration with wearable devices for automatic tracking
+- Social features (challenges, friend connections, leaderboards)
+- Advanced analytics and trend analysis with charts
+- Personalized workout recommendations based on goals
+- Integration with calendar for scheduled workouts
+- Export workout history to reports (PDF/Excel)
+- Push notifications for workout reminders
+- Persistent storage (Database integration)
+- Mobile app version for on-the-go tracking
+- AI-powered fitness coach recommendations
+
+---
+
+### 🗓️ **Date: 15-01-2026**
+### 🎯 Tasks of the Day
+Completed **Task 7** for Address Book System enhancements:
+- **Task 7:** Ensure no duplicate entry of the same person in a particular address book
+
+---
+
+## 🔒 Task 7: Duplicate Entry Prevention
+**Feature:** Ability to ensure there is no duplicate entry of the same person in a particular address book
+
+### 🎯 Objective
+Prevent duplicate contacts from being added to the same address book by validating contact names before addition.
+
+### ✨ Features Implemented
+- **Duplicate Detection Logic:**
+  - Check if contact name already exists before adding new contact
+  - Case-insensitive name comparison for robust duplicate detection
+  - Prevent duplicate entries with user-friendly error messages
+  - Maintain data integrity within each address book
+
+- **Implementation Details:**
+  - Validate contact name against existing contacts in selected address book
+  - Display informative message when attempting to add duplicate contact
+  - Recursive retry mechanism for user to enter different contact name
+  - Seamless integration with existing Add Contact functionality
+
+- **User Experience:**
+  - Clear notification: "Contact with name '[Name]' already exists in this address book!"
+  - Option to retry with different name or cancel operation
+  - Prevents accidental data duplication
+
+### 📚 Key Learnings
+- Linear search through contact array for existence validation
+- String comparison techniques for name matching
+- User input validation patterns for preventing invalid operations
+- Data integrity assurance through constraint implementation
+- Effective error messaging and user guidance
+
+### 💡 Technical Implementation
+```csharp
+```
+
+### 💡 OOP Principles Applied
+✅ **Encapsulation** - Data validation within the class boundaries  
+✅ **Data Integrity** - Preventing invalid state through constraint checks  
+✅ **Single Responsibility** - Dedicated validation logic for duplicate prevention  
+✅ **User Experience Design** - Clear feedback and recovery mechanisms  
+
+---
+
+### 💡 OOP Principles Applied
+✅ **Encapsulation** - Search logic encapsulated within utility methods  
+✅ **Abstraction** - Complex search algorithm hidden from user interface  
+✅ **Separation of Concerns** - Search logic separate from data storage and presentation  
+✅ **Code Reusability** - Generic search methods work across multiple address books  
+
+### 🚀 Future Enhancements
+- **Advanced Search Options:**
+  - Search by phone number across multiple books
+  - Search by email across multiple books
+  - Combined search criteria (city AND state)
+  - Partial name search with wildcard support
+
+- **Performance Optimization:**
+  - Index-based search for faster lookups
+  - Caching frequently searched results
+  - Database migration for large datasets
+
+- **Export & Report Generation:**
+  - Export search results to file
+  - Generate reports by city/state
+  - Statistical analysis of contacts by location
 
 ---
 
@@ -761,15 +1001,11 @@ Implement **Employee Wage Computation System** with interface-driven utilities a
 
 By the end of this training, I aim to be proficient in:
 - 🧠 Problem-solving and logical thinking
-- 🧹 Writing clean, readable, and maintainable code
-- 🏗️ Object-Oriented Programming principles and design patterns
-- 🔄 Working across multiple programming languages
-- 🏗️ Understanding modern development platforms like **.NET**
+- 🧹 Writing clean, readable, and maintaina                          le code
+- 🏗️ Object-Oriented Programming principles and design        pa    terns
+-                      🔄 Working across multiple programming languages
+- 🏗️ nderstanding modern development platforms like **.NET**
 
 ---
 
-<<<<<<< HEAD
 📌 *This README will be continuously updated to reflect ongoing learning and progress during the BridgeLabz Training Program.*
-=======
-📌 *This README will be continuously updated to reflect ongoing learning and progress during the BridgeLabz Training Program.*
->>>>>>> 6efdd9ef80615dd2e8539dc8bfaa9cac32e6cb7a
