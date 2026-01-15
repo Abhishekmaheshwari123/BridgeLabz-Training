@@ -1,186 +1,173 @@
-# Day 1 – Linked List
+# 📚 BridgeLabz-Training
 
-## 📌 Overview
-This module covers **Linked List data structures** and their real-world applications using C#.  
-The implementation includes **Singly Linked List, Doubly Linked List, and Circular Linked List** with scenario-based examples.
+## Data Structures & Algorithms in C# - Learning Progress
 
 ---
 
-## 📂 Topics Covered
-
-### 🔹 Singly Linked List
-- Inventory Management
-- Social Media Feed
-- Student Record System
-
-**Files:**
-- `InventoryManagment.cs`
-- `SocialMedia.cs`
-- `StudentRecord.cs`
-
----
-
-### 🔹 Doubly Linked List
-- Library Management System
-- Movie Management System
-- Undo / Redo Operations
-
-**Files:**
-- `LibraryManagment.cs`
-- `MovieManagment.cs`
-- `UndoRedo.cs`
+### 📅 January 8, 2026 - Day 1
+#### 🎯 Topics Covered:
+- **LinkedList Data Structures**
+  - Singly LinkedList
+  - Doubly LinkedList
+  - Circular LinkedList
+  
+#### 💻 Practice Problems:
+- ✅ Library Management System (Singly LinkedList)
+- ✅ Movie Management System (Doubly LinkedList)
+- ✅ Task Scheduler System (Circular LinkedList)
 
 ---
 
-### 🔹 Circular Linked List
-- Round Robin Scheduling
-- Task Scheduler
-- Ticket Reservation System
-
-**Files:**
-- `RoundRobin.cs`
-- `TaskScheduler.cs`
-- `TicketReservation.cs`
-
----
-
-## 🎯 Learning Outcomes
-- Understand node-based data structures
-- Perform insertion, deletion, and traversal
-- Apply linked lists to real-life scenarios
-
----
-
-## 🛠 Language Used
-- C#
-
-
-# Day 2 – Stack and Queue
-
-## 📌 Overview
-This day focuses on **Stack and Queue** data structures and their operational behavior (LIFO & FIFO).
+### 📅 January 9, 2026 - Day 2
+#### 🎯 Topics Covered:
+- **Stack and Queue**
+  - Stack operations and implementations
+  - Queue operations and implementations
+- **HashMap and Hash Functions**
+  - HashMap operations
+  - Hash function implementations
+  
+#### 💻 Practice Problems:
+- ✅ Queue Using Stacks
+- ✅ Stack Sorting
+- ✅ Stock Span Problem
+- ✅ Pair With Sum (HashMap)
+- ✅ Zero Sum SubArrays (HashMap)
 
 ---
 
-## 📂 Topics Covered
-
-### 🔹 Stack
-- Push / Pop Operations
-- Undo-Redo functionality
-- Expression evaluation
-
-### 🔹 Queue
-- Enqueue / Dequeue Operations
-- Task scheduling
-- Service request handling
-
----
-
-## 🎯 Learning Outcomes
-- Understand LIFO and FIFO principles
-- Implement stack and queue using arrays or linked lists
-- Apply stacks and queues to practical problems
+### 📅 January 10, 2026 - Day 3
+#### 🎯 Topics Covered:
+- **Sorting Algorithms**
+  - Various sorting techniques and implementations
+  
+#### 💻 Practice Problems:
+- ✅ Sort Book Prices
+- ✅ Sort Employee
+- ✅ Sort Exam Score
+- ✅ Sort Product Price
+- ✅ Sort Student
 
 ---
 
-## 🛠 Language Used
-- C#
+### 📅 January 12, 2026 - Day 4
+#### 🎯 Topics Covered:
+- **Searching Algorithms**
+  - Linear Search implementations
+  - Finding elements in arrays and lists
+  
+- **String Manipulation and StringBuilder**
+  - Efficient string concatenation
+  - Character stream operations
+  - File I/O with StreamReader
+  
+#### 💻 Practice Problems:
+- ✅ Find Missing Positive and Target
+- ✅ Find the Peak Element in an Array
+- ✅ Find the Rotation Point in a Rotated Sorted Array
+- ✅ Search First Negative Number
+- ✅ Search for a Specific Word in a List of Sentences
+- ✅ Compare StringBuilder Performance
+- ✅ Concatenate Strings Efficiently Using StringBuilder
+- ✅ Convert Byte Stream to Character Stream
+- ✅ Count Word Occurrence in File
+- ✅ Read File Line by Line Using StreamReader
+- ✅ Read User Input and Write to File
+- ✅ Remove Duplicate
 
-
-# Day 3 – Dictionary and HashSet
-
-## 📌 Overview
-This module introduces **hash-based collections** for fast lookups and uniqueness constraints.
-
----
-
-## 📂 Topics Covered
-
-### 🔹 Dictionary
-- Key-value pair storage
-- Fast data retrieval
-- Use cases like user profiles, configuration settings
-
-### 🔹 HashSet
-- Unique element storage
-- Duplicate prevention
-- Membership checking
-
----
-
-## 🎯 Learning Outcomes
-- Understand hashing concepts
-- Use Dictionary for efficient key-based access
-- Use HashSet for uniqueness and performance
-
----
-
-## 🛠 Language Used
-- C#
-
-# Day 4 – Sorting Algorithms
-
-## 📌 Overview
-This module covers **comparison-based and non-comparison-based sorting algorithms** with full implementations.
+#### 🏭 Scenario-Based Project:
+- **Metal Factory Pipe Cutting System**
+  - Optimized and Non-Optimized implementations
+  - Price chart management
+  - Factory demonstration system
 
 ---
 
-## 📂 Sorting Techniques Implemented
+### 📅 January 13, 2026 - Day 5
+#### 🎯 Topics Covered:
+- **Object-Oriented Programming with Collections**
+  - Interface-based design patterns
+  - Properties with backing fields
+  - Method signatures and parameters
+  - Generic Collections (List<T>)
+  
+#### 📚 Scenario-Based Projects:
 
-### 🔹 Basic Sorting
-- Bubble Sort → `BubbleSort.cs`
-- Selection Sort → `SelectionSort.cs`
-- Insertion Sort → `InsertionSort.cs`
+##### 1. BookBuddy System
+- **Book Class**
+  - Properties: Title, Author with backing fields
+  - ToString() method for formatted output
+  
+- **IBook Interface**
+  - addBook(Book book)
+  - searchByAuthor(string author)
+  - sortBookByAlphabetically()
+  - Display()
+  
+- **IBookImpl Implementation**
+  - List<Book> for dynamic book storage
+  - Dictionary<string, List<int>> for author indexing
+  - swap(int i, int j, List<Book> books) helper method
+  - Bubble sort for alphabetical ordering
+  
+- **Menu Class**
+  - Interactive console-based UI
+  - Options: Add Book, Search by Author, Sort Books, Display All, Exit
+  - Input validation and error handling
 
-### 🔹 Advanced Sorting
-- Merge Sort → `MergeSort.cs`
-- Quick Sort → `QuickSort.cs`
-- Heap Sort → `HeapSort.cs`
-
-### 🔹 Non-Comparison Sorting
-- Counting Sort → `CountingSort.cs`
-
----
-
-## 📊 Concepts Covered
-- Time & Space Complexity
-- Stable vs Unstable Sorting
-- Recursive vs Iterative approaches
-
----
-
-## 🎯 Learning Outcomes
-- Choose appropriate sorting algorithm
-- Analyze algorithm efficiency
-- Implement sorting in real-world applications
-
----
-
-## 🛠 Language Used
-- C#
-
-# Day 5 – Scenario-Based Problems
-
-## 📌 Overview
-This day focuses on **real-world problem solving** using the data structures and algorithms learned in previous days.
-
----
-
-## 🧠 Scenarios Covered
-- Task Scheduling using Queue / Circular Linked List
-- Undo-Redo system using Stack / Doubly Linked List
-- Student and Inventory Management using Linked Lists
-- Fast lookups using Dictionary and HashSet
-- Sorting datasets using appropriate sorting techniques
+##### 2. Cinema Time Project
+- **Movie Management System**
+  - Movie class with properties
+  - List-based movie collection
+  - Interactive menu system
+  - Search and display functionalities
+  
+#### 🔧 Technical Highlights:
+- C# 2.0 compatibility (explicit property implementation)
+- Interface segregation and dependency injection
+- Search optimization using Dictionary
+- User-friendly menu-driven interface4
 
 ---
 
-## 🎯 Learning Outcomes
-- Identify the correct data structure for a problem
-- Design optimized solutions
-- Apply DSA concepts in practical applications
+### 📅 January 14, 2026 - Day 6
+#### 🎯 Topics Covered:
+- **Algorithm's Runtime Analysis**
+  - Time Complexity Analysis
+  - Space Complexity Analysis
+  - Big-O Notation
+  - Best, Average, and Worst Case scenarios
+  
+#### 💻 Practice Problems:
+- ✅ Concatenate Strings Efficiently Using StringBuilder
+  - Comparing string concatenation performance
+  - Analyzing O(n²) vs O(n) complexity
+  
+- ✅ Recursive vs Iterative Fibonacci Computation
+  - Recursive approach: O(2^n) exponential time
+  - Iterative approach: O(n) linear time
+  - Space complexity comparison
+  
+- ✅ Search a Target
+  - Linear Search: O(n) time complexity
+  - Binary Search: O(log n) time complexity
+  - Performance analysis on different input sizes
+  
+- ✅ Sorting Algorithms Analysis
+  - Bubble Sort: O(n²) worst case
+  - Quick Sort: O(n log n) average case
+  - Merge Sort: O(n log n) guaranteed
+  - Analyzing efficiency across different cases
+
+#### 📈 Key Learnings:
+- Understanding Big-O notation for algorithm efficiency
+- Trade-offs between time and space complexity
+- Importance of choosing the right algorithm for the problem
+- Performance measurement and optimization techniques
 
 ---
 
-## 🛠 Language Used
-- C#
+## 📊 Summary
+- **Total Days:** 6
+- **Topics Covered:** LinkedList, Stack, Queue, HashMap, Sorting, Searching, Dynamic Programming, OOP Design Patterns, Collections, Algorithm Analysis, Big-O Notation
+- **Projects Completed:** 12+ Practice Problems + 3 Scenario-Based Projects
