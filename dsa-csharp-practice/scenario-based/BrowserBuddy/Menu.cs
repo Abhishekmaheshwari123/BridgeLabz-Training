@@ -5,7 +5,7 @@ class Menu
     BrowserUtility utility = new BrowserUtility();
     public void show()
     {
-        int n;
+        int n; 
 
         do
         {

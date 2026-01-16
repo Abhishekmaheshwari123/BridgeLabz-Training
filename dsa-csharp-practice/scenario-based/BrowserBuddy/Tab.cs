@@ -9,7 +9,7 @@ internal class Tab
     {
         this.url = url;
         prev = null;
-        next = null;
+        next = null; 
     }
 
     public override string ToString()

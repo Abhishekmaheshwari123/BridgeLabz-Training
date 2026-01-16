@@ -4,7 +4,7 @@ using System.Collections.Generic;
 class BrowserUtility : IBrowser
 {
     Stack<Tab> history = new Stack<Tab>();
-    Tab head = new Tab("head");
+     Tab head = new Tab("head");
     Tab CurrentTab ;
     Tab Tail ;
     public BrowserUtility()
