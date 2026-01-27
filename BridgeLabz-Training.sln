@@ -1,0 +1,84 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "collections-csharp-practice", "collections-csharp-practice", "{B74F3C35-59E8-51DC-66E2-E46BE919468F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gcr-codebase", "gcr-codebase", "{255FAFDC-F1EC-4880-7D21-15A4A1D77069}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nunit-testing", "nunit-testing", "{265A2176-3F8C-AFB9-AE74-9446BF7BDC6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculator-app", "collections-csharp-practice\gcr-codebase\nunit-testing\calculator-app\calculator-app.csproj", "{FD5D11D8-7F77-EEB9-71FC-4C6971661851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseConnectionApp", "collections-csharp-practice\gcr-codebase\nunit-testing\DatabaseConnectionApp\DatabaseConnectionApp.csproj", "{6D8BE14E-DC17-9FC3-9B72-69E86DA87BC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandlingApp", "collections-csharp-practice\gcr-codebase\nunit-testing\ExceptionHandlingApp\ExceptionHandlingApp.csproj", "{D62A8AAB-9AD9-855C-D3FD-FEFA4FE8ABB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHandlingApp", "collections-csharp-practice\gcr-codebase\nunit-testing\FileHandlingApp\FileHandlingApp.csproj", "{8AB05DE7-3BB5-4065-1986-E0B27F7A9222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListOperationsApp", "collections-csharp-practice\gcr-codebase\nunit-testing\ListOperationsApp\ListOperationsApp.csproj", "{8D7DB15B-70AF-6946-3D7E-17B01134BBF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterizedTestsApp", "collections-csharp-practice\gcr-codebase\nunit-testing\ParameterizedTestsApp\ParameterizedTestsApp.csproj", "{9D34792E-B43F-6AB3-8CF3-1CC61CFC85DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceTestingApp", "collections-csharp-practice\gcr-codebase\nunit-testing\PerformanceTestingApp\PerformanceTestingApp.csproj", "{8326EFAC-08BD-EE56-2E63-AFD164FD0287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringUtilityApp", "collections-csharp-practice\gcr-codebase\nunit-testing\StringUtilityApp\StringUtilityApp.csproj", "{3220A4EE-FC2A-D1D3-A099-330BEDB33025}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD5D11D8-7F77-EEB9-71FC-4C6971661851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5D11D8-7F77-EEB9-71FC-4C6971661851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5D11D8-7F77-EEB9-71FC-4C6971661851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5D11D8-7F77-EEB9-71FC-4C6971661851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D8BE14E-DC17-9FC3-9B72-69E86DA87BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8BE14E-DC17-9FC3-9B72-69E86DA87BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8BE14E-DC17-9FC3-9B72-69E86DA87BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8BE14E-DC17-9FC3-9B72-69E86DA87BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62A8AAB-9AD9-855C-D3FD-FEFA4FE8ABB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62A8AAB-9AD9-855C-D3FD-FEFA4FE8ABB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62A8AAB-9AD9-855C-D3FD-FEFA4FE8ABB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62A8AAB-9AD9-855C-D3FD-FEFA4FE8ABB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AB05DE7-3BB5-4065-1986-E0B27F7A9222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB05DE7-3BB5-4065-1986-E0B27F7A9222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB05DE7-3BB5-4065-1986-E0B27F7A9222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB05DE7-3BB5-4065-1986-E0B27F7A9222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7DB15B-70AF-6946-3D7E-17B01134BBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7DB15B-70AF-6946-3D7E-17B01134BBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7DB15B-70AF-6946-3D7E-17B01134BBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7DB15B-70AF-6946-3D7E-17B01134BBF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D34792E-B43F-6AB3-8CF3-1CC61CFC85DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D34792E-B43F-6AB3-8CF3-1CC61CFC85DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D34792E-B43F-6AB3-8CF3-1CC61CFC85DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D34792E-B43F-6AB3-8CF3-1CC61CFC85DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8326EFAC-08BD-EE56-2E63-AFD164FD0287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8326EFAC-08BD-EE56-2E63-AFD164FD0287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8326EFAC-08BD-EE56-2E63-AFD164FD0287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8326EFAC-08BD-EE56-2E63-AFD164FD0287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3220A4EE-FC2A-D1D3-A099-330BEDB33025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3220A4EE-FC2A-D1D3-A099-330BEDB33025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3220A4EE-FC2A-D1D3-A099-330BEDB33025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3220A4EE-FC2A-D1D3-A099-330BEDB33025}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{255FAFDC-F1EC-4880-7D21-15A4A1D77069} = {B74F3C35-59E8-51DC-66E2-E46BE919468F}
+		{265A2176-3F8C-AFB9-AE74-9446BF7BDC6C} = {255FAFDC-F1EC-4880-7D21-15A4A1D77069}
+		{FD5D11D8-7F77-EEB9-71FC-4C6971661851} = {265A2176-3F8C-AFB9-AE74-9446BF7BDC6C}
+		{6D8BE14E-DC17-9FC3-9B72-69E86DA87BC5} = {265A2176-3F8C-AFB9-AE74-9446BF7BDC6C}
+		{D62A8AAB-9AD9-855C-D3FD-FEFA4FE8ABB5} = {265A2176-3F8C-AFB9-AE74-9446BF7BDC6C}
+		{8AB05DE7-3BB5-4065-1986-E0B27F7A9222} = {265A2176-3F8C-AFB9-AE74-9446BF7BDC6C}
+		{8D7DB15B-70AF-6946-3D7E-17B01134BBF6} = {265A2176-3F8C-AFB9-AE74-9446BF7BDC6C}
+		{9D34792E-B43F-6AB3-8CF3-1CC61CFC85DF} = {265A2176-3F8C-AFB9-AE74-9446BF7BDC6C}
+		{8326EFAC-08BD-EE56-2E63-AFD164FD0287} = {265A2176-3F8C-AFB9-AE74-9446BF7BDC6C}
+		{3220A4EE-FC2A-D1D3-A099-330BEDB33025} = {265A2176-3F8C-AFB9-AE74-9446BF7BDC6C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85A694E0-C298-4C15-B920-CD399851AC6A}
+	EndGlobalSection
+EndGlobal
