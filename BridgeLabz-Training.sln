@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ioProgramming", "ioProgramming", "{AFF88A9C-E8F9-2DCB-07C2-B6BF9BC779FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gcr-codebase", "gcr-codebase", "{6308E83F-F753-8CB3-B8DB-18F42FABDE37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ipl-censorship-analyser", "ioProgramming\gcr-codebase\ipl-censorship-analyser\ipl-censorship-analyser.csproj", "{B25C4498-9041-CD79-9580-038AD3B0FFF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B25C4498-9041-CD79-9580-038AD3B0FFF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25C4498-9041-CD79-9580-038AD3B0FFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25C4498-9041-CD79-9580-038AD3B0FFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25C4498-9041-CD79-9580-038AD3B0FFF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6308E83F-F753-8CB3-B8DB-18F42FABDE37} = {AFF88A9C-E8F9-2DCB-07C2-B6BF9BC779FA}
+		{B25C4498-9041-CD79-9580-038AD3B0FFF0} = {6308E83F-F753-8CB3-B8DB-18F42FABDE37}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8D4E81C-01FC-468F-86F9-EA073F040728}
+	EndGlobalSection
+EndGlobal
