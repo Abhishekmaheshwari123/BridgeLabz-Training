@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ipl-censorship-analyser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb6b645d408ffdffaf4ccb5cb72bc26f4dfa36be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43ca714a55eac806587f5ddb989781f6a0ec98e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ipl-censorship-analyser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ipl-censorship-analyser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
