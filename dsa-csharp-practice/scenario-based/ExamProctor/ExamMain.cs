@@ -1,0 +1,8 @@
+class ExamMain
+{
+    static void Main(string[] args)
+    {
+        ExamMenu menu = new ExamMenu();
+        menu.ShowMenu();
+    }
+}
